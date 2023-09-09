@@ -1,0 +1,135 @@
+/* Center the fieldset */
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  form {
+    text-align: left;
+    width: 800px; /* Adjust the maximum width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Additional styling for the legend */
+  legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: 120px; /* Adjust the left margin as needed */
+    padding: 10px; /* Add padding to create a box around the text */
+    border: 1px solid black; /* Add a border to create the box */
+    display: inline-block; /* Ensure the legend is treated as a block element */
+  }
+  
+  /* Center all form elements */
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Style checkboxes and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+button {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+  /* Style the Submit button */
+  button[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;    
+  }
+  
+  /* Optional: Add hover effect to the Submit button */
+  button[type="submit"]:hover {
+    background-color: gray;
+    color: white;
+  }
+
+  /* CSS for making textboxes the same size */
+.textbox-300 {
+    width: 300px;
+  }
+
+/* Position the form-row container */
+.form-row {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row;
+    margin-bottom: 10px; /* Add margin as needed */
+}
+
+.status {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row;
+    justify-content: flex-end; /* Align elements to the right */
+
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align elements to the left */
+}
+
+/* Apply styles to each element within the form row */
+.form-row .status,
+.form-row .date {
+    flex: 1; /* Allow each element to grow and take up equal space */
+    margin-right: 20px; /* Add margin between elements (adjust as needed) */
+}
+
+/* Adjust other styles as needed */
+.status label,
+.date label {
+    margin-bottom: 5px; /* Add spacing between labels and input/select elements */
+}
+
+.radio-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Add space between elements */
+}
+
+.radio-elements input[type="radio"] {
+    margin-left: 20px; /* Add more space to the right of each radio element */
+  }
+
+.radio-text {
+    margin-right: 45px;
+}
+
+.last-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkbox-elements {
+    display: flex;
+    flex-direction: row;    
+    margin-right: 20px;
+}
+
+.checkbox-elements input[type="checkbox"] {
+    margin-left: 20px; /* Add more space to the left of each checkbox element */
+  }
+
+.check-left-gap {
+    margin-right: 20px;
+}
